@@ -33,7 +33,8 @@ print('Scan to ./code.png, or put a PNG file there. Press ^C to cancel.')
 
 # Check if code.png exists every second
 while not os.path.isfile('code.png'):
-    time.sleep(1000)
+    time.sleep(1)
+print('Found it! Scanning...')
 
 # OCR the image
 code = pytesseract.image_to_string(Image.open('code.png'),
