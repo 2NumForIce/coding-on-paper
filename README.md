@@ -10,3 +10,5 @@ This uses Python-tesseract for OCR and `eval()` to run that code in Python. Befo
 scanned code and ask if you want to actually run that code, but you can turn that feature off using `-f`.
 
 Scan to a file named `./code.png`. It will detect the file and show you the code. Does not work if indented currently.
+
+This also does not work well for handwritten code, or if the code is too small.
